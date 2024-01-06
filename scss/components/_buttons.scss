@@ -1,0 +1,56 @@
+// The apply and logo classes are used in the header component, but they are defined in the buttons component. This is a great way to keep your code organized and modular. You can also use the @extend directive to inherit styles from one class to another.
+@mixin apply-btn {
+    background-color: #000;
+    color: #fff;
+    padding: 1rem 2rem;
+    border-radius: 10000px;
+    border: none;
+    font-size: 1.5rem;
+    font-weight: 700;
+    cursor: pointer;
+    font-family: 'sprintleap-bold', Arial, Helvetica, sans-serif;
+    transition: all 0.3s ease-in-out;
+    &:hover {
+        background-color: #fff;
+        color: #000;
+    };
+};
+
+@mixin logo {
+    width: 140px;
+};
+
+@mixin logo-text {
+    text-decoration: none;
+    color: #000;
+    font-size: 2rem;
+    font-weight: 700;
+    font-family: 'sprintleap-bold', Arial, Helvetica, sans-serif;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    &:hover {
+        color: #292828;
+    };
+}
+
+//Header links dropdown styling
+@mixin dropdown {
+    position: absolute;
+    padding-top: 0;
+    list-style: none;
+    background-color: #fff;
+    top: 3.5rem;
+    // opacity: 0;
+    justify-content: flex-start;
+    margin-left: -10px;
+    margin-right: 10px;
+    flex-direction: column;
+    // visibility: hidden;
+    border: 1px solid rgb(235 234 235);
+    border-radius: 8px;
+    z-index: 9;
+    // box-shadow: 0 0 0.4rem rgb(0 0 0 / 1);
+    width: 219px;
+    min-width: unset;
+    transition: visibility .4s, opacity .4s ease, transform .4s cubic-bezier(.3,-.62,.21,1);
+};
