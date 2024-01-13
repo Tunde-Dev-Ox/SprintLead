@@ -15,6 +15,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  margin-bottom: 2.5rem;
   align-items: center;
     @include containerPadding {
     padding: 0 4vw
@@ -202,12 +203,13 @@
   };
 };
 
+
 .solution-text {
   width: 100%;
   max-width: 600px;
   font-size: 1rem;
   font-weight: 400;
-  text-align: center;
+  text-align: left;
   color: #000;
   letter-spacing: -0.02em;
   line-height: 1.5;
@@ -215,13 +217,14 @@
   margin-bottom: 1rem;
 };
 
+
 .solution-texttitle-header {
   font-size: clamp(1.3rem, 1.155rem + 0.73vw, 1.7rem);
-  text-align: center;
+  text-align: justify;
   font-family: 'sprintleap-bold', Arial, Helvetica, sans-serif;
     color: #000;
     letter-spacing: -0.02em;
-    line-height: 1;
+    line-height: 1.1;
     font-weight: 800;
     margin-bottom: 1.4rem;
 };
@@ -231,7 +234,7 @@
   max-width: 600px;
   font-size: clamp(1rem, 0.927rem + 0.36vw, 1.2rem);
   font-weight: 500;
-  text-align: center;
+  text-align: justify;
   color: #000;
   letter-spacing: -0.02em;
   line-height: 1.5;
@@ -246,11 +249,32 @@
   justify-content: center;
   align-items: center;
   margin-bottom: 1rem;
-
+  
   img {
     width: 100%;
   }
 };
+
+.solution-text2 {
+  @include tablet-max {
+    text-align: right;
+  }
+}
+
+.solution-texttitle-content2 {
+  @include tablet-max {
+    text-align: end;
+  }
+}
+
+.solution-texttitle-2 {
+  @include tablet-max {
+    text-align: end;
+  }
+}
+.solution-button {
+  border-radius: 0px;
+}
 
 
 //section 4
