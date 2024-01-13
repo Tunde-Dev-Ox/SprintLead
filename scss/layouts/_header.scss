@@ -1,10 +1,12 @@
+@import "../utilities/breakpoints";
 .navbar_component {
  width: 100%;
- height: 135px;
  display: flex;
+ height: clamp(5.938rem, 5.597rem + 1.7vw, 6.875rem);
  justify-content: center;
- align-items: center;
-
+ align-items: flex-end;
+}
+ 
  .navbar {
   width: 100%;
   display: flex;
@@ -13,15 +15,19 @@
   max-width: 1200px;
   margin: 0 auto;
   background-color: rgb(255, 255, 255);
-  padding: .7rem 2rem;
-  border-radius: 10000px;
-  -webkit-box-shadow: -1px 1px 38px 11px rgba(184, 180, 180, 0.91);
-  -moz-box-shadow: -1px 1px 38px 11px rgba(184, 180, 180, 0.91);
-  box-shadow: -1px 1px 38px 11px rgba(184, 180, 180, 0.91);
- }
+  @include containerPadding {
+     padding: 0 4vw;
+  }
 }
 
-.apply {
+.apply-button-wrapper {
+  @include display-links{
+    display: block;
+  }
+  display: none
+}
+
+.apply{
  @include apply-btn;
 }
 
@@ -30,18 +36,32 @@
 
  a {
   @include logo-text;
+
+  img {
+    width: 100%;
+  }
  }
 }
 
 .nav-links {
- width: 60%;
+  @include display-links {
+      display: flex;
+    }
+    display: none;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    border: 2px solid rgb(235 234 235);
+    border-radius: 12px;
 }
 
 .nav-ul {
  display: flex;
- justify-content: space-between;
+ justify-content: center;
  align-items: center;
  list-style: none;
+ width: 100%;
 }
 
 .nav-main-li {
@@ -52,39 +72,41 @@
 .nav-dropdown-trigger {
  text-decoration: none;
  color: #000;
- font-size: 1.175rem;
+ font-size: 1rem;
  font-weight: 500;
+ width: 100%;
+ display: inline-block;
  font-family: "sprintleap-bold", Arial, Helvetica, sans-serif;
  cursor: pointer;
  transition: all 0.3s ease-in-out;
  &:hover {
-  color: #292828;
+  color: #00000086;
  }
 }
 
-.nav-dropdown-wrapper {
- @include dropdown;
- // padding: 0;
- // margin: 0;
- // opacity: 0;
- // visibility: hidden;
- transform: translateY(-10px);
- &.active {
-  opacity: 1;
-  visibility: visible;
-  transform: translateY(0);
+//hamburger menu
+.hamburger-menuWrapper {
+ display: none;
+ cursor: pointer;
+ @include tablet {
+  display: block;
  }
+}
 
- a {
-  font-size: 0.884rem;
-  text-decoration: none;
-  padding: 6px 14px;
+.hamburger-menu {
+  width: 30px;
+  height: 20px;
+  position: relative;
   display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  flex-basis: 100%;
-  width: auto;
-  margin: 5px 0;
-  color: rgb(29 29 29);
-  cursor: pointer;
- }
 }
+
+.hamburger-menu-line {
+  width: 100%;
+  height: 2px;
+  background-color: #000;
+  transition: all 0.3s ease-in-out;
+}
+
