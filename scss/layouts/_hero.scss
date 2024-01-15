@@ -1,5 +1,5 @@
 .hero-component {
-    padding-top: 4rem;
+    padding-top: clamp(3.3rem, 2.573rem + 3.64vw, 5.7rem);
     background-color: #fff;
 }
 
