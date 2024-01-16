@@ -1316,8 +1316,8 @@ body {
   }
 }
 
-.mission-mainText-pargraph {
-  font-size: clamp(1.2rem, 1.091rem + 0.45vw, 1.5rem);
+.mission-mainText-paragraph {
+  font-size: clamp(1rem, 0.927rem + 0.36vw, 1.2rem);
   text-align: center;
   letter-spacing: -0.02em;
   color: #000;
@@ -1350,20 +1350,29 @@ body {
 }
 
 .meet-the-faces-inner-wrapper {
-  padding: 2rem;
-  border-radius: 50px;
   display: flex;
   justify-content: space-between;
   background-color: #fff;
-  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
-  transition: all 0.3s ease-in-out;
+  -webkit-box-shadow: 10px 10px 11px 0px rgba(57, 68, 240, 0.85);
+  -moz-box-shadow: 10px 10px 11px 0px rgba(57, 68, 240, 0.85);
+  box-shadow: 10px 10px 11px 0px rgba(57, 68, 240, 0.85);
 }
-.meet-the-faces-inner-wrapper:hover {
-  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+@media (max-width: 1200px) {
+  .meet-the-faces-inner-wrapper {
+    flex-direction: column;
+  }
 }
 
 .meet-the-faces-images {
   max-width: 600px;
+  border-radius: 50px;
+}
+@media (max-width: 1200px) {
+  .meet-the-faces-images {
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 2rem;
+  }
 }
 .meet-the-faces-images img {
   width: 100%;
@@ -1378,6 +1387,22 @@ body {
   justify-content: center;
   align-items: center;
   margin-left: 2rem;
+}
+@media (max-width: 1200px) {
+  .meet-the-faces-content {
+    margin-left: 0;
+    max-width: 100%;
+  }
+}
+.meet-the-faces-content p {
+  padding: 20px;
+  font-size: clamp(1rem, 0.927rem + 0.36vw, 1.2rem);
+  text-align: center;
+  letter-spacing: -0.02em;
+  color: #000;
+  font-weight: 400;
+  line-height: 1.1;
+  font-family: "sprintleap-regular", Arial, Helvetica, sans-serif;
 }
 
 .our-values {
@@ -1414,7 +1439,7 @@ body {
   margin-bottom: 1.4rem;
 }
 
-.our-values-paragrapgh {
+.our-values-paragraph {
   width: 100%;
   max-width: 600px;
   font-size: clamp(1rem, 0.927rem + 0.36vw, 1.2rem);
@@ -1435,6 +1460,11 @@ body {
   grid-row-gap: 16px;
   grid-column-gap: 16px;
   margin-top: 2rem;
+}
+@media (max-width: 800px) {
+  .our-values-cards {
+    flex-direction: column;
+  }
 }
 
 .our-values-card {
@@ -1468,7 +1498,7 @@ body {
 }
 .our-values-card p {
   font-size: 1rem;
-  font-weight: 700;
+  font-weight: 400;
   color: #000000;
   line-height: 1.1;
   font-family: "sprintleap-bold", Arial, Helvetica, sans-serif;
