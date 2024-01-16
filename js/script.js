@@ -5,6 +5,8 @@ const faqIcon = document.querySelectorAll('.faq-svg');
 const menuBtn = document.querySelector('.hamburger-menuWrapper');
 const mobileMenu = document.querySelector('.nav-mobile-block');
 const body = document.querySelector('body');
+const routeApply = document.querySelectorAll('.apply-route');
+const registerBtn = document.querySelector('#register');
 
 
 // FAQ implementation
@@ -31,6 +33,15 @@ faqBtn.forEach((btn, index) => {
 menuBtn.addEventListener('click', function () {
     mobileMenu.classList.toggle('mobile-menu-active');
     body.classList.toggle('mobile-menu-body');
+});
+
+
+//route apply button
+routeApply.forEach((btn) => {
+    btn.addEventListener('click', (e) => {
+        e.preventDefault();
+        window.location.href = "./apply.html";
+    });
 });
 
 
