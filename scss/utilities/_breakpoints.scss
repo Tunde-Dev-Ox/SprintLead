@@ -34,3 +34,10 @@
     }
 };
 
+
+@mixin tablet-max-xl {
+    @media (max-width: 968px) {
+     @content;
+    }
+};
+
