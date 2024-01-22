@@ -2,8 +2,6 @@
 const routeApply = document.querySelectorAll('.apply-route');
 const registerBtn = document.querySelector('#register');
 
-
-
 // Mobile menu implementation
 import { menu } from './menu.js';
 menu();
