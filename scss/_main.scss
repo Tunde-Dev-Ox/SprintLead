@@ -1397,6 +1397,9 @@
     margin-right: 0;
     max-width: 100%;
   }
+  @include tablet-max-xl {
+    display: none;
+  }
 
   img {
     width: 100%;
@@ -1414,6 +1417,12 @@
   @include containerPadding {
     margin-left: 0;
     max-width: 100%;
+  }
+}
+
+.contact-right-content {
+  @include tablet-max-xl {
+    width: 100%;
   }
 }
 
@@ -1516,6 +1525,9 @@
 
   button {
     @include apply-btn;
+      @include mobile {
+    width: 100%;
+  } 
   }
 }
 
@@ -1654,7 +1666,7 @@
 }
 
 .bootcamp-people-title {
-  font-size: clamp(2rem, 2.182rem + 1.09vw, 2.6rem);
+  font-size: clamp(1.3rem, 2.182rem + 1.09vw, 1.9rem);
   text-align: left;
   letter-spacing: -0.02em;
   color: #000;
@@ -1708,10 +1720,14 @@
   }
   @include tablet-max {
     margin-bottom: .5rem;
+    align-items: flex-start;
+    justify-content: flex-start;
   };
 
+
   img {
-    width: 100%;
+    width: 3rem;
+    height: 3rem;
     vertical-align: middle;
   }
 }
@@ -1724,18 +1740,18 @@
 }
 
 .bootcamp-people-text-title {
-  font-size: clamp(1.2rem, 1.182rem + 1.09vw, 1.4rem);
+  font-size: clamp(1rem, 0.927rem + 0.36vw, 1.2rem);
   text-align: left;
   letter-spacing: -0.02em;
   color: #000;
-  font-weight: 600;
+  font-weight: 700;
   line-height: 1;
   font-family: 'sprintleap-bold', Arial, Helvetica, sans-serif;
   margin-bottom: .5rem;
 }
 
 .bootcamp-people-text-description {
-    font-size: clamp(1rem, 1.182rem + 1.09vw, 1.2rem);
+  font-size: clamp(1rem, 0.927rem + 0.36vw, 1.2rem);
   text-align: left;
   letter-spacing: -0.02em;
      color: #8a8989;

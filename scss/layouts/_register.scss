@@ -1,0 +1,207 @@
+.register {
+    padding-top: clamp(3.3rem, 2.573rem + 3.64vw, 5.7rem);
+    background-color: #fff;
+};
+
+.register-container {
+    width: 100%;
+};
+
+.register-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 4vw;
+};
+
+.register-title {
+    max-width: 600px;
+    font-size: clamp(2rem, 2.182rem + 1.09vw, 2.4rem);
+    text-align: center;
+    letter-spacing: -0.02em;
+    color: #000;
+    font-weight: 800;
+    line-height: 1;
+    margin-bottom: 2.5rem;
+};
+
+.register-form {
+    width: 100%;
+    max-width: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    position: relative;
+    padding-bottom: 1rem;
+};
+
+.register-form-group {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-bottom: 1.5rem;
+};
+
+.name-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+    gap: 1rem;
+};
+
+.name-wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.register-form-label {
+    font-size: clamp(1rem, 0.909rem + 0.45vw, 1.25rem);
+    font-weight: 500;
+    text-align: left;
+    color: #000;
+    letter-spacing: -0.02em;
+    line-height: 1.5;
+    font-family: 'sprintleap-regular', Arial, Helvetica, sans-serif;
+    margin-bottom: 0.5rem;
+};
+
+.register-form-group input[type="text"], .register-form-group input[type="email"], .register-form-group input[type="tel"]  {
+    width: 100%;
+    height: 50px;
+    border-radius: 12px;
+    border: 1px solid #000;
+    padding: 0 1rem;
+    font-size: clamp(1rem, 0.909rem + 0.45vw, 1.25rem);
+    font-weight: 400;
+    text-align: left;
+    color: #000;
+    letter-spacing: -0.02em;
+    line-height: 1.5;
+    font-family: 'sprintleap-regular', Arial, Helvetica, sans-serif;
+};
+
+.register-form-group input[type="radio"] {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 1px solid #000;
+    margin-right: 0.5rem;
+};
+
+.radio-cohort {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 1rem;
+
+    label {
+        font-size: clamp(.8rem, 0.909rem + 0.45vw, 1rem);
+        font-weight: 400;
+        text-align: left;
+        color: #8a8989;
+        letter-spacing: -0.02em;
+        line-height: 1.5;
+        font-family: 'sprintleap-regular', Arial, Helvetica, sans-serif;
+    }
+};
+
+.radio-hear {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 1rem;
+
+    label {
+        font-size: clamp(.8rem, 0.909rem + 0.45vw, 1rem);
+        font-weight: 400;
+        text-align: left;
+        color: #8a8989;
+        letter-spacing: -0.02em;
+        line-height: 1.5;
+        font-family: 'sprintleap-regular', Arial, Helvetica, sans-serif;
+    }
+};
+
+.radio-level {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 1rem;
+
+    label {
+        font-size: clamp(.8rem, 0.909rem + 0.45vw, 1rem);
+        font-weight: 400;
+        text-align: left;
+        color: #8a8989;
+        letter-spacing: -0.02em;
+        line-height: 1.5;
+        font-family: 'sprintleap-regular', Arial, Helvetica, sans-serif;
+    }
+};
+
+
+.register-form-group input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 1px solid #000;
+    margin-right: 0.5rem;
+};
+
+.goal, .last {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.goal label {
+    font-size: clamp(.8rem, 0.909rem + 0.45vw, 1rem);
+    font-weight: 400;
+    text-align: left;
+    color: #8a8989;
+    letter-spacing: -0.02em;
+    line-height: 1.5;
+    font-family: 'sprintleap-regular', Arial, Helvetica, sans-serif;
+};
+
+.last label {
+    font-size: clamp(.8rem, 0.909rem + 0.45vw, 1rem);
+    font-weight: 400;
+    text-align: left;
+    color: #8a8989;
+    letter-spacing: -0.02em;
+    line-height: 1.5;
+    font-family: 'sprintleap-regular', Arial, Helvetica, sans-serif;
+};
+
+.register-form-group textarea {
+    width: 100%;
+    height: 150px;
+    border-radius: 12px;
+    border: 1px solid #000;
+    padding: 1rem;
+    font-size: clamp(1rem, 0.909rem + 0.45vw, 1.25rem);
+    font-weight: 400;
+    text-align: left;
+    color: #000;
+    letter-spacing: -0.02em;
+    line-height: 1.5;
+    font-family: 'sprintleap-regular', Arial, Helvetica, sans-serif;
+};
+
+
+.register-btn {
+    @include apply-btn;
+    width: 100%;
+}
