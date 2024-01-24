@@ -19,7 +19,7 @@
   margin-bottom: 2.5rem;
   align-items: center;
     @include containerPadding {
-    padding: 0 4vw
+    padding: 0 1.25rem;
   };
 };
 
@@ -62,7 +62,7 @@
   justify-content: space-between;
   align-items: center;
     @include containerPadding {
-    padding: 0 4vw
+    padding: 0 1.25rem;
   };
 };
 
@@ -181,6 +181,9 @@
     max-width: 600px;
     margin: 0 auto;
     margin-bottom: 1.4rem;
+     @include containerPadding {
+    padding: 0 1.25rem;
+  };
 };
 
 
@@ -194,7 +197,7 @@
   justify-content: space-between;
   align-items: center;
     @include containerPadding {
-    padding: 0 4vw
+    padding: 0 1.25rem;
   };
   @include tablet-max {
     flex-direction: column;
@@ -225,7 +228,7 @@
 
 .solution-texttitle-header {
   font-size: clamp(1.3rem, 1.155rem + 0.73vw, 1.7rem);
-  text-align: justify;
+  // text-align: justify;
   font-family: 'sprintleap-bold', Arial, Helvetica, sans-serif;
     color: #000;
     letter-spacing: -0.02em;
@@ -300,7 +303,7 @@
   justify-content: space-between;
   align-items: center;
     @include containerPadding {
-    padding: 0 4vw
+    padding: 0 1.25rem;
   };
 };
 
@@ -386,11 +389,17 @@
   line-height: 1.5;
   font-family: 'sprintleap-regular', Arial, Helvetica, sans-serif;
   margin-bottom: auto;
+  @include tablet-max {
+    margin-bottom: 1rem;
+  }
 }
 
 .case-study-btn {
   width: 60%;
   text-align: center;
+  @include mobile {
+    width: 70%;
+  };
 }
 
 .case-studies-imgWrapper {
@@ -425,7 +434,7 @@
   justify-content: space-between;
   align-items: center;
     @include containerPadding {
-    padding: 0 4vw
+    padding: 0 1.25rem;
   };
 };
 
@@ -664,6 +673,9 @@
 
 .mentor-imgWrapper {
   margin-right: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
   img {
     width: 3rem;
@@ -684,18 +696,17 @@
   letter-spacing: -0.02em;
   line-height: 1.5;
   font-family: 'sprintleap-regular', Arial, Helvetica, sans-serif;
-  margin-bottom: 1rem;
 };
 
 .mentors-card-header {
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   text-align: left;
   font-family: 'sprintleap-bold', Arial, Helvetica, sans-serif;
     color: #000000;
     letter-spacing: -0.02em;
     line-height: 1;
     font-weight: 800;
-    margin-bottom: 1.4rem;
+    margin-bottom: .4rem;
 };
 
 .mentors-card-textWrapper-content {
@@ -708,7 +719,6 @@
   letter-spacing: -0.02em;
   line-height: 1.5;
   font-family: 'sprintleap-regular', Arial, Helvetica, sans-serif;
-  margin-bottom: 1rem;
 };
 
 
@@ -765,7 +775,7 @@
     font-weight: 400;
     line-height: 1.1;
     @include containerPadding {
-    padding: 0 4vw
+    padding: 0 1.25rem;
   };
 }
 
@@ -895,7 +905,7 @@
   justify-content: space-between;
   align-items: center;
     @include containerPadding {
-    padding: 0 4vw
+    padding: 0 1.25rem;
   };
   @include tablet-max {
     flex-direction: column;
@@ -937,7 +947,7 @@
   justify-content: space-between;
   align-items: center;
     @include containerPadding {
-    padding: 0 4vw
+    padding: 0 1.25rem;
   };
 };
 
@@ -969,7 +979,7 @@
   justify-content: space-between;
   align-items: center;
     @include containerPadding {
-    padding: 0 4vw
+    padding: 0 1.25rem;
   };
 };
 
@@ -1044,7 +1054,7 @@
   justify-content: space-between;
   align-items: center;
     @include containerPadding {
-    padding: 0 4vw
+    padding: 0 1.25rem;
   };
 };
 
@@ -1153,7 +1163,7 @@
     font-weight: 400;
     line-height: 1.1;
     @include containerPadding {
-    padding: 0 4vw
+    padding: 0 1.25rem;
   };
 }
 
@@ -1369,7 +1379,7 @@
   font-weight: 400;
   line-height: 1.1;
   @include containerPadding {
-    padding: 0 4vw
+    padding: 0 1.25rem;
   };
    @include tablet-max-xl {
     flex-direction: column-reverse;
@@ -1531,7 +1541,7 @@
   justify-content: space-between;
   align-items: center;
   @include containerPadding {
-    padding: 0 4vw
+    padding: 0 1.25rem;
   };
   @include tablet-max {
     flex-direction: column;
@@ -1595,7 +1605,6 @@
 
 .bootcamp-content-button {
    @include apply-btn;
-    // margin-right: 1rem;
     font-size: clamp(1rem, 0.927rem + 0.36vw, 1.2rem);
     margin-bottom: 1rem;
     text-align: left;
@@ -1626,7 +1635,7 @@
   justify-content: space-between;
   align-items: center;
   @include containerPadding {
-    padding: 0 4vw
+    padding: 0 1.25rem;
   };
   @include tablet-max {
     flex-direction: column;
@@ -1828,7 +1837,7 @@
     font-weight: 400;
     line-height: 1.1;
     @include containerPadding {
-    padding: 0 4vw
+    padding: 0 1.25rem;
   };
 }
 
@@ -1963,7 +1972,7 @@
     font-weight: 400;
     line-height: 1.1;
     @include containerPadding {
-    padding: 0 4vw
+    padding: 0 1.25rem;
   };
 }
 

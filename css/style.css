@@ -575,7 +575,7 @@ body {
 }
 @media (max-width: 1200px) {
   .featuredOn-wrapper {
-    padding: 0 4vw;
+    padding: 0 1.25rem;
   }
 }
 
@@ -618,7 +618,7 @@ body {
 }
 @media (max-width: 1200px) {
   .problems-wrapper {
-    padding: 0 4vw;
+    padding: 0 1.25rem;
   }
 }
 
@@ -733,6 +733,11 @@ body {
   margin: 0 auto;
   margin-bottom: 1.4rem;
 }
+@media (max-width: 1200px) {
+  .solution-header {
+    padding: 0 1.25rem;
+  }
+}
 
 .sprintleap-solution-wrapper {
   max-width: 1200px;
@@ -746,7 +751,7 @@ body {
 }
 @media (max-width: 1200px) {
   .sprintleap-solution-wrapper {
-    padding: 0 4vw;
+    padding: 0 1.25rem;
   }
 }
 @media (max-width: 800px) {
@@ -777,7 +782,6 @@ body {
 
 .solution-texttitle-header {
   font-size: clamp(1.3rem, 1.155rem + 0.73vw, 1.7rem);
-  text-align: justify;
   font-family: "sprintleap-bold", Arial, Helvetica, sans-serif;
   color: #000;
   letter-spacing: -0.02em;
@@ -852,7 +856,7 @@ body {
 }
 @media (max-width: 1200px) {
   .case-studies-wrapper {
-    padding: 0 4vw;
+    padding: 0 1.25rem;
   }
 }
 
@@ -941,10 +945,20 @@ body {
   font-family: "sprintleap-regular", Arial, Helvetica, sans-serif;
   margin-bottom: auto;
 }
+@media (max-width: 800px) {
+  .case-studies-textWrapper-content {
+    margin-bottom: 1rem;
+  }
+}
 
 .case-study-btn {
   width: 60%;
   text-align: center;
+}
+@media (max-width: 480px) {
+  .case-study-btn {
+    width: 70%;
+  }
 }
 
 .case-studies-imgWrapper {
@@ -978,7 +992,7 @@ body {
 }
 @media (max-width: 1200px) {
   .programs-wrapper {
-    padding: 0 4vw;
+    padding: 0 1.25rem;
   }
 }
 
@@ -1216,6 +1230,9 @@ body {
 
 .mentor-imgWrapper {
   margin-right: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .mentor-imgWrapper img {
   width: 3rem;
@@ -1235,18 +1252,17 @@ body {
   letter-spacing: -0.02em;
   line-height: 1.5;
   font-family: "sprintleap-regular", Arial, Helvetica, sans-serif;
-  margin-bottom: 1rem;
 }
 
 .mentors-card-header {
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   text-align: left;
   font-family: "sprintleap-bold", Arial, Helvetica, sans-serif;
   color: #000000;
   letter-spacing: -0.02em;
   line-height: 1;
   font-weight: 800;
-  margin-bottom: 1.4rem;
+  margin-bottom: 0.4rem;
 }
 
 .mentors-card-textWrapper-content {
@@ -1259,7 +1275,6 @@ body {
   letter-spacing: -0.02em;
   line-height: 1.5;
   font-family: "sprintleap-regular", Arial, Helvetica, sans-serif;
-  margin-bottom: 1rem;
 }
 
 .mentors-buttonWrapper {
@@ -1317,7 +1332,7 @@ body {
 }
 @media (max-width: 1200px) {
   .faq-wrapper {
-    padding: 0 4vw;
+    padding: 0 1.25rem;
   }
 }
 
@@ -1445,7 +1460,7 @@ body {
 }
 @media (max-width: 1200px) {
   .mission-hero-wrapper {
-    padding: 0 4vw;
+    padding: 0 1.25rem;
   }
 }
 @media (max-width: 800px) {
@@ -1491,7 +1506,7 @@ body {
 }
 @media (max-width: 1200px) {
   .mission-mainText-wrapper {
-    padding: 0 4vw;
+    padding: 0 1.25rem;
   }
 }
 
@@ -1524,7 +1539,7 @@ body {
 }
 @media (max-width: 1200px) {
   .meet-the-faces-wrapper {
-    padding: 0 4vw;
+    padding: 0 1.25rem;
   }
 }
 
@@ -1603,7 +1618,7 @@ body {
 }
 @media (max-width: 1200px) {
   .our-values-wrapper {
-    padding: 0 4vw;
+    padding: 0 1.25rem;
   }
 }
 
@@ -1707,7 +1722,7 @@ body {
 }
 @media (max-width: 1200px) {
   .apply-wrapper {
-    padding: 0 4vw;
+    padding: 0 1.25rem;
   }
 }
 
@@ -1916,7 +1931,7 @@ body {
 }
 @media (max-width: 1200px) {
   .contact-wrapper {
-    padding: 0 4vw;
+    padding: 0 1.25rem;
   }
 }
 @media (max-width: 968px) {
@@ -2102,7 +2117,7 @@ body {
 }
 @media (max-width: 1200px) {
   .bootcamp-wrapper {
-    padding: 0 4vw;
+    padding: 0 1.25rem;
   }
 }
 @media (max-width: 800px) {
@@ -2212,7 +2227,7 @@ body {
 }
 @media (max-width: 1200px) {
   .bootcamp-people-wrapper {
-    padding: 0 4vw;
+    padding: 0 1.25rem;
   }
 }
 @media (max-width: 800px) {
@@ -2422,7 +2437,7 @@ body {
 }
 @media (max-width: 1200px) {
   .curriculum-wrapper {
-    padding: 0 4vw;
+    padding: 0 1.25rem;
   }
 }
 
@@ -2559,7 +2574,7 @@ body {
 }
 @media (max-width: 1200px) {
   .bootcamp-step-wrapper {
-    padding: 0 4vw;
+    padding: 0 1.25rem;
   }
 }
 
