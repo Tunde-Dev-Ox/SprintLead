@@ -30,7 +30,7 @@
     color: #000;
     letter-spacing: -0.02em;
     line-height: 1;
-    font-weight: 800;
+    font-weight: 700;
     margin-bottom: 1.4rem;
 };
 
@@ -73,7 +73,7 @@
     color: #000;
     letter-spacing: -0.02em;
     line-height: 1;
-    font-weight: 800;
+    font-weight: 700;
     margin-bottom: 1.4rem;
 };
 
@@ -93,14 +93,14 @@
 };
 
 .problems-card {
-  width: 100%;
-  max-width: 300px;
+  // width: 100%;
+  // max-width: 300px;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  padding: 2.25rem;
+  padding: 20px 37px;
   cursor: pointer;
-  border-radius: 12px;
+  border-radius: 5px;
   background-color: #c23b3b;
   box-shadow: 0px 0px 10px 0px rgb(0 0 0 / 10%);
   transition: all 0.3s ease-in-out;
@@ -177,7 +177,7 @@
     color: #000;
     letter-spacing: -0.02em;
     line-height: 1;
-    font-weight: 800;
+    font-weight: 700;
     max-width: 600px;
     margin: 0 auto;
     margin-bottom: 1.4rem;
@@ -233,7 +233,7 @@
     color: #000;
     letter-spacing: -0.02em;
     line-height: 1.1;
-    font-weight: 800;
+    font-weight: 550;
     margin-bottom: 1.4rem;
 };
 
@@ -241,7 +241,7 @@
   width: 100%;
   max-width: 600px;
   font-size: clamp(1rem, 0.927rem + 0.36vw, 1.2rem);
-  font-weight: 500;
+  font-weight: 400;
   text-align: justify;
   color: #000;
   letter-spacing: -0.02em;
@@ -281,7 +281,8 @@
   }
 }
 .solution-button {
-  border-radius: 0px;
+  border-radius: 5px;
+  @include apply-btn;
 }
 
 
@@ -314,7 +315,7 @@
     color: #000;
     letter-spacing: -0.02em;
     line-height: 1;
-    font-weight: 800;
+    font-weight: 700;
     margin-bottom: 1.4rem;
 };
 
@@ -347,10 +348,10 @@
       &:hover {
         box-shadow: 0px 0px 10px 0px #4800ff8c;
       };
-     @include tablet-max {
+    @include tablet-max {
       flex-direction: column;
       align-items: center;
-    };   
+    };
 }
 
 .case-studies-textWrapper {
@@ -374,7 +375,7 @@
     color: #000000;
     letter-spacing: -0.02em;
     line-height: 1;
-    font-weight: 800;
+    font-weight: 700;
     margin-bottom: 1.4rem;
 };
 
@@ -445,7 +446,7 @@
     color: #000;
     letter-spacing: -0.02em;
     line-height: 1;
-    font-weight: 800;
+    font-weight: 700;
     margin-bottom: 1.4rem;
 };
 
@@ -499,7 +500,7 @@
     color: #000000;
     letter-spacing: -0.02em;
     line-height: 1;
-    font-weight: 800;
+    font-weight: 700;
     margin-bottom: 1.4rem;
 };
 
@@ -549,8 +550,15 @@
 };
 
 .programs-button {
-  width: 100%;
+  @include apply-btn;
   text-align: center;
+  width: 30%;
+  @include tablet {
+    width: 40%;
+  }
+  @include mobile {
+    width: 100%;
+  }
 }
 
 
@@ -580,7 +588,7 @@
     color: #000000;
     letter-spacing: -0.02em;
     line-height: 1;
-    font-weight: 800;
+    font-weight: 700;
     margin-bottom: 1.4rem;
 };
 
@@ -617,17 +625,17 @@
 
 .mentors-card {
   background-color: #fff;
-    flex-direction: column;
-    flex: none;
-    justify-content: center;
-    padding-bottom: 0.5rem;
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
-    display: flex;
-    min-width: 300px;
-     background-color: rgba(255, 255, 255, 0.1); // Semi-transparent white
-     -webkit-backdrop-filter: blur(10px); // Apply blur
-     backdrop-filter: blur(10px); // Apply blur
+  flex-direction: column;
+  flex: none;
+  justify-content: center;
+  padding-bottom: 0.5rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  display: flex;
+  min-width: 300px;
+  background-color: rgba(255, 255, 255, 0.1); // Semi-transparent white
+  -webkit-backdrop-filter: blur(10px); // Apply blur
+  backdrop-filter: blur(10px); // Apply blur
   border-radius: 10px; // Rounded corners
   border: 1px solid rgba(255, 255, 255, 0.2); // Thin white border
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37); // Subtle shadow
@@ -737,21 +745,21 @@
 }
 
 .mentors-button {
+  @include apply-btn;
   width: 50%;
-  border-radius: 0px;
+  border-radius: 5px;
+  width: 25%;
+  display: inline-block;
+  @include tablet {
+    width: 40%;
+  }
   @include mobile {
-    width: 80%;
-  };
+    width: 60%;
+  }
 }
 
 
 //section 7
-.faq-is-active {
-  max-height: 1000px;
-    transition: max-height 0.5s ease-in-out;
-    display: block;
-}
-
 .faq {
   padding-top: 3rem;
 };
@@ -786,7 +794,7 @@
     color: #000;
     letter-spacing: -0.02em;
     line-height: 1;
-    font-weight: 800;
+    font-weight: 700;
     margin-bottom: 1.4rem;
 }
 
@@ -857,7 +865,7 @@
 }
 
 .faq-is-active {
-  max-height: 1000px;
+  max-height: 1200px;
     transition: max-height 0.5s ease-in-out;
     display: block;
 }
@@ -875,12 +883,24 @@
     color: #000000;
     letter-spacing: -0.02em;
     line-height: 1;
-    font-weight: 800;
+    font-weight: 700;
     margin-bottom: 1.4rem;
 }
 
 .rotate {
   transform: rotate(-45deg);
+}
+
+.apply-faq {
+  @include apply-btn;
+  width: 25%;
+  display: inline-block;
+  @include tablet {
+    width: 40%;
+  }
+  @include mobile {
+    width: 60%;
+  }
 }
 
 
@@ -1227,9 +1247,9 @@
   text-align: center;
   padding: 2rem;
   background-color: #fff;
-  -webkit-box-shadow: 10px 10px 11px 0px rgba(57,68,240,0.85);
-  -moz-box-shadow: 10px 10px 11px 0px rgba(57,68,240,0.85);
-  box-shadow: 10px 10px 11px 12px rgba(57,68,240,0.85);
+  -webkit-box-shadow: 3px 3px 3px 3px rgba(57,68,240,0.85);
+  -moz-box-shadow: 3px 3px 3px 3px rgba(57,68,240,0.85);
+  box-shadow: 3px 3px 3px 3px rgba(57,68,240,0.85);
   @include containerPadding {
     flex-direction: column;
   }
@@ -1557,6 +1577,7 @@
   };
   @include tablet-max {
     flex-direction: column;
+    text-align: center;
   };
 }
 
@@ -1569,6 +1590,9 @@
     justify-content: center;
     align-items: left;
     position: relative;
+   @include tablet-max {
+    text-align: center;
+  };
 }
 
 .bootcamp-content-title {
@@ -1580,6 +1604,9 @@
   line-height: 1;
   font-family: 'sprintleap-bold', Arial, Helvetica, sans-serif;
   margin-bottom: 1.4rem;
+  @include tablet-max {
+    text-align: center;
+  };
 }
 
 .bootcamp-content-description {
@@ -1591,6 +1618,9 @@
   line-height: 1.5;
   font-family: 'sprintleap-regular', Arial, Helvetica, sans-serif;
   margin-bottom: 1.4rem;
+  @include tablet-max {
+    text-align: center;
+  };  
 }
 
 .bootcamp-content-image {
@@ -1754,7 +1784,7 @@
   font-size: clamp(1rem, 0.927rem + 0.36vw, 1.2rem);
   text-align: left;
   letter-spacing: -0.02em;
-     color: #8a8989;
+     color: #000;
   font-weight: 400;
   line-height: 1.5;
   font-family: 'sprintleap-regular', Arial, Helvetica, sans-serif;
@@ -1824,7 +1854,7 @@
     font-size: clamp(1rem, 1.182rem + 1.09vw, 1.2rem);
   text-align: center;
   letter-spacing: -0.02em;
-     color: #8a8989;
+     color: #000;
   font-weight: 400;
   line-height: 1.5;
   font-family: 'sprintleap-regular', Arial, Helvetica, sans-serif;
@@ -1864,7 +1894,7 @@
   color: #000;
   letter-spacing: -0.02em;
   line-height: 1;
-  font-weight: 800;
+  font-weight: 700;
   margin-bottom: 1.4rem;
 }
 
@@ -1874,7 +1904,7 @@
   font-size: clamp(1rem, 0.927rem + 0.36vw, 1.2rem);
   font-weight: 400;
   text-align: center;
-  color: #8a8989;
+  color: #000;
   letter-spacing: -0.02em;
   line-height: 1.5;
   font-family: 'sprintleap-regular', Arial, Helvetica, sans-serif;
@@ -1915,7 +1945,7 @@
   font-size: clamp(1rem, 0.927rem + 0.36vw, 1.2rem);
   text-align: left;
   font-family: 'sprintleap-bold', Arial, Helvetica, sans-serif;
-  color: #8a8989;
+  color: #000;
   letter-spacing: -0.02em;
   line-height: 1.5;
   font-weight: 800;
@@ -1926,7 +1956,7 @@
   font-size: clamp(1rem, 0.927rem + 0.36vw, 1.2rem);
   text-align: left;
   font-family: 'sprintleap-regular', Arial, Helvetica, sans-serif;
-  color: #8a8989;
+  color: #000;
   letter-spacing: -0.02em;
   line-height: 1.5;
   font-weight: 400;
@@ -2017,7 +2047,7 @@
   font-size: 20px;
   text-align: center;
   font-family: 'sprintleap-bold', Arial, Helvetica, sans-serif;
-  color: #8a8989;
+  color: #000;
   letter-spacing: -0.02em;
   line-height: 1;
   font-weight: 400;

@@ -337,10 +337,10 @@
 .apply {
   background: linear-gradient(90deg, rgba(72, 0, 255, 0.8156862745) 0%, rgba(15, 15, 133, 0.7450980392) 50%, #703dd6 100%);
   color: #fff;
-  padding: 1rem 2rem;
-  border-radius: 0;
+  padding: 0.75rem 1rem;
+  border-radius: 5px;
   border: 1px solid transparent;
-  font-size: 1.2rem;
+  font-size: 0.8759rem;
   font-weight: 700;
   cursor: pointer;
   font-family: "sprintleap-bold", Arial, Helvetica, sans-serif;
@@ -350,8 +350,7 @@
 }
 .apply:hover {
   background-color: rgba(15, 15, 133, 0.9176470588);
-  color: #ffffff;
-  border: 1px solid #0f0f85;
+  box-shadow: inset 0 0 0 1px rgba(103, 103, 218, 0.9176470588);
 }
 
 .logo {
@@ -405,7 +404,7 @@
 .nav-dropdown-trigger {
   text-decoration: none;
   color: #000;
-  font-size: 1rem;
+  font-size: 0.8975rem;
   font-weight: 500;
   width: 100%;
   display: inline-block;
@@ -586,7 +585,7 @@ body {
   color: #000;
   letter-spacing: -0.02em;
   line-height: 1;
-  font-weight: 800;
+  font-weight: 700;
   margin-bottom: 1.4rem;
 }
 
@@ -629,7 +628,7 @@ body {
   color: #000;
   letter-spacing: -0.02em;
   line-height: 1;
-  font-weight: 800;
+  font-weight: 700;
   margin-bottom: 1.4rem;
 }
 
@@ -649,14 +648,12 @@ body {
 }
 
 .problems-card {
-  width: 100%;
-  max-width: 300px;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  padding: 2.25rem;
+  padding: 20px 37px;
   cursor: pointer;
-  border-radius: 12px;
+  border-radius: 5px;
   background-color: #c23b3b;
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease-in-out;
@@ -728,7 +725,7 @@ body {
   color: #000;
   letter-spacing: -0.02em;
   line-height: 1;
-  font-weight: 800;
+  font-weight: 700;
   max-width: 600px;
   margin: 0 auto;
   margin-bottom: 1.4rem;
@@ -786,7 +783,7 @@ body {
   color: #000;
   letter-spacing: -0.02em;
   line-height: 1.1;
-  font-weight: 800;
+  font-weight: 550;
   margin-bottom: 1.4rem;
 }
 
@@ -794,7 +791,7 @@ body {
   width: 100%;
   max-width: 600px;
   font-size: clamp(1rem, 0.927rem + 0.36vw, 1.2rem);
-  font-weight: 500;
+  font-weight: 400;
   text-align: justify;
   color: #000;
   letter-spacing: -0.02em;
@@ -834,7 +831,23 @@ body {
 }
 
 .solution-button {
-  border-radius: 0px;
+  border-radius: 5px;
+  background: linear-gradient(90deg, rgba(72, 0, 255, 0.8156862745) 0%, rgba(15, 15, 133, 0.7450980392) 50%, #703dd6 100%);
+  color: #fff;
+  padding: 0.75rem 1rem;
+  border-radius: 5px;
+  border: 1px solid transparent;
+  font-size: 0.8759rem;
+  font-weight: 700;
+  cursor: pointer;
+  font-family: "sprintleap-bold", Arial, Helvetica, sans-serif;
+  transition: all 0.3s ease-in-out;
+  text-decoration: none;
+  display: inline-block;
+}
+.solution-button:hover {
+  background-color: rgba(15, 15, 133, 0.9176470588);
+  box-shadow: inset 0 0 0 1px rgba(103, 103, 218, 0.9176470588);
 }
 
 .case-studies {
@@ -867,7 +880,7 @@ body {
   color: #000;
   letter-spacing: -0.02em;
   line-height: 1;
-  font-weight: 800;
+  font-weight: 700;
   margin-bottom: 1.4rem;
 }
 
@@ -929,7 +942,7 @@ body {
   color: #000000;
   letter-spacing: -0.02em;
   line-height: 1;
-  font-weight: 800;
+  font-weight: 700;
   margin-bottom: 1.4rem;
 }
 
@@ -1003,7 +1016,7 @@ body {
   color: #000;
   letter-spacing: -0.02em;
   line-height: 1;
-  font-weight: 800;
+  font-weight: 700;
   margin-bottom: 1.4rem;
 }
 
@@ -1061,7 +1074,7 @@ body {
   color: #000000;
   letter-spacing: -0.02em;
   line-height: 1;
-  font-weight: 800;
+  font-weight: 700;
   margin-bottom: 1.4rem;
 }
 
@@ -1110,8 +1123,34 @@ body {
 }
 
 .programs-button {
-  width: 100%;
+  background: linear-gradient(90deg, rgba(72, 0, 255, 0.8156862745) 0%, rgba(15, 15, 133, 0.7450980392) 50%, #703dd6 100%);
+  color: #fff;
+  padding: 0.75rem 1rem;
+  border-radius: 5px;
+  border: 1px solid transparent;
+  font-size: 0.8759rem;
+  font-weight: 700;
+  cursor: pointer;
+  font-family: "sprintleap-bold", Arial, Helvetica, sans-serif;
+  transition: all 0.3s ease-in-out;
+  text-decoration: none;
+  display: inline-block;
   text-align: center;
+  width: 30%;
+}
+.programs-button:hover {
+  background-color: rgba(15, 15, 133, 0.9176470588);
+  box-shadow: inset 0 0 0 1px rgba(103, 103, 218, 0.9176470588);
+}
+@media (max-width: 768px) {
+  .programs-button {
+    width: 40%;
+  }
+}
+@media (max-width: 480px) {
+  .programs-button {
+    width: 100%;
+  }
 }
 
 .mentors {
@@ -1138,7 +1177,7 @@ body {
   color: #000000;
   letter-spacing: -0.02em;
   line-height: 1;
-  font-weight: 800;
+  font-weight: 700;
   margin-bottom: 1.4rem;
 }
 
@@ -1292,19 +1331,36 @@ body {
 }
 
 .mentors-button {
+  background: linear-gradient(90deg, rgba(72, 0, 255, 0.8156862745) 0%, rgba(15, 15, 133, 0.7450980392) 50%, #703dd6 100%);
+  color: #fff;
+  padding: 0.75rem 1rem;
+  border-radius: 5px;
+  border: 1px solid transparent;
+  font-size: 0.8759rem;
+  font-weight: 700;
+  cursor: pointer;
+  font-family: "sprintleap-bold", Arial, Helvetica, sans-serif;
+  transition: all 0.3s ease-in-out;
+  text-decoration: none;
+  display: inline-block;
   width: 50%;
-  border-radius: 0px;
+  border-radius: 5px;
+  width: 25%;
+  display: inline-block;
+}
+.mentors-button:hover {
+  background-color: rgba(15, 15, 133, 0.9176470588);
+  box-shadow: inset 0 0 0 1px rgba(103, 103, 218, 0.9176470588);
+}
+@media (max-width: 768px) {
+  .mentors-button {
+    width: 40%;
+  }
 }
 @media (max-width: 480px) {
   .mentors-button {
-    width: 80%;
+    width: 60%;
   }
-}
-
-.faq-is-active {
-  max-height: 1000px;
-  transition: max-height 0.5s ease-in-out;
-  display: block;
 }
 
 .faq {
@@ -1343,7 +1399,7 @@ body {
   color: #000;
   letter-spacing: -0.02em;
   line-height: 1;
-  font-weight: 800;
+  font-weight: 700;
   margin-bottom: 1.4rem;
 }
 
@@ -1413,7 +1469,7 @@ body {
 }
 
 .faq-is-active {
-  max-height: 1000px;
+  max-height: 1200px;
   transition: max-height 0.5s ease-in-out;
   display: block;
 }
@@ -1431,12 +1487,43 @@ body {
   color: #000000;
   letter-spacing: -0.02em;
   line-height: 1;
-  font-weight: 800;
+  font-weight: 700;
   margin-bottom: 1.4rem;
 }
 
 .rotate {
   transform: rotate(-45deg);
+}
+
+.apply-faq {
+  background: linear-gradient(90deg, rgba(72, 0, 255, 0.8156862745) 0%, rgba(15, 15, 133, 0.7450980392) 50%, #703dd6 100%);
+  color: #fff;
+  padding: 0.75rem 1rem;
+  border-radius: 5px;
+  border: 1px solid transparent;
+  font-size: 0.8759rem;
+  font-weight: 700;
+  cursor: pointer;
+  font-family: "sprintleap-bold", Arial, Helvetica, sans-serif;
+  transition: all 0.3s ease-in-out;
+  text-decoration: none;
+  display: inline-block;
+  width: 25%;
+  display: inline-block;
+}
+.apply-faq:hover {
+  background-color: rgba(15, 15, 133, 0.9176470588);
+  box-shadow: inset 0 0 0 1px rgba(103, 103, 218, 0.9176470588);
+}
+@media (max-width: 768px) {
+  .apply-faq {
+    width: 40%;
+  }
+}
+@media (max-width: 480px) {
+  .apply-faq {
+    width: 60%;
+  }
 }
 
 .mission-hero {
@@ -1785,9 +1872,9 @@ body {
   text-align: center;
   padding: 2rem;
   background-color: #fff;
-  -webkit-box-shadow: 10px 10px 11px 0px rgba(57, 68, 240, 0.85);
-  -moz-box-shadow: 10px 10px 11px 0px rgba(57, 68, 240, 0.85);
-  box-shadow: 10px 10px 11px 12px rgba(57, 68, 240, 0.85);
+  -webkit-box-shadow: 3px 3px 3px 3px rgba(57, 68, 240, 0.85);
+  -moz-box-shadow: 3px 3px 3px 3px rgba(57, 68, 240, 0.85);
+  box-shadow: 3px 3px 3px 3px rgba(57, 68, 240, 0.85);
 }
 @media (max-width: 1200px) {
   .bootcamp-inner-wrapper {
@@ -2088,10 +2175,10 @@ body {
 .contact-right-content-form-input button {
   background: linear-gradient(90deg, rgba(72, 0, 255, 0.8156862745) 0%, rgba(15, 15, 133, 0.7450980392) 50%, #703dd6 100%);
   color: #fff;
-  padding: 1rem 2rem;
-  border-radius: 0;
+  padding: 0.75rem 1rem;
+  border-radius: 5px;
   border: 1px solid transparent;
-  font-size: 1.2rem;
+  font-size: 0.8759rem;
   font-weight: 700;
   cursor: pointer;
   font-family: "sprintleap-bold", Arial, Helvetica, sans-serif;
@@ -2101,8 +2188,7 @@ body {
 }
 .contact-right-content-form-input button:hover {
   background-color: rgba(15, 15, 133, 0.9176470588);
-  color: #ffffff;
-  border: 1px solid #0f0f85;
+  box-shadow: inset 0 0 0 1px rgba(103, 103, 218, 0.9176470588);
 }
 @media (max-width: 480px) {
   .contact-right-content-form-input button {
@@ -2139,6 +2225,7 @@ body {
 @media (max-width: 800px) {
   .bootcamp-wrapper {
     flex-direction: column;
+    text-align: center;
   }
 }
 
@@ -2152,6 +2239,11 @@ body {
   align-items: left;
   position: relative;
 }
+@media (max-width: 800px) {
+  .bootcamp-content-text {
+    text-align: center;
+  }
+}
 
 .bootcamp-content-title {
   font-size: clamp(2.4rem, 2.182rem + 1.09vw, 3rem);
@@ -2163,6 +2255,11 @@ body {
   font-family: "sprintleap-bold", Arial, Helvetica, sans-serif;
   margin-bottom: 1.4rem;
 }
+@media (max-width: 800px) {
+  .bootcamp-content-title {
+    text-align: center;
+  }
+}
 
 .bootcamp-content-description {
   font-size: clamp(1rem, 0.927rem + 0.36vw, 1.2rem);
@@ -2173,6 +2270,11 @@ body {
   line-height: 1.5;
   font-family: "sprintleap-regular", Arial, Helvetica, sans-serif;
   margin-bottom: 1.4rem;
+}
+@media (max-width: 800px) {
+  .bootcamp-content-description {
+    text-align: center;
+  }
 }
 
 .bootcamp-content-image {
@@ -2200,10 +2302,10 @@ body {
 .bootcamp-content-button {
   background: linear-gradient(90deg, rgba(72, 0, 255, 0.8156862745) 0%, rgba(15, 15, 133, 0.7450980392) 50%, #703dd6 100%);
   color: #fff;
-  padding: 1rem 2rem;
-  border-radius: 0;
+  padding: 0.75rem 1rem;
+  border-radius: 5px;
   border: 1px solid transparent;
-  font-size: 1.2rem;
+  font-size: 0.8759rem;
   font-weight: 700;
   cursor: pointer;
   font-family: "sprintleap-bold", Arial, Helvetica, sans-serif;
@@ -2221,8 +2323,7 @@ body {
 }
 .bootcamp-content-button:hover {
   background-color: rgba(15, 15, 133, 0.9176470588);
-  color: #ffffff;
-  border: 1px solid #0f0f85;
+  box-shadow: inset 0 0 0 1px rgba(103, 103, 218, 0.9176470588);
 }
 
 .bootcamp-people {
@@ -2358,7 +2459,7 @@ body {
   font-size: clamp(1rem, 0.927rem + 0.36vw, 1.2rem);
   text-align: left;
   letter-spacing: -0.02em;
-  color: #8a8989;
+  color: #000;
   font-weight: 400;
   line-height: 1.5;
   font-family: "sprintleap-regular", Arial, Helvetica, sans-serif;
@@ -2428,7 +2529,7 @@ body {
   font-size: clamp(1rem, 1.182rem + 1.09vw, 1.2rem);
   text-align: center;
   letter-spacing: -0.02em;
-  color: #8a8989;
+  color: #000;
   font-weight: 400;
   line-height: 1.5;
   font-family: "sprintleap-regular", Arial, Helvetica, sans-serif;
@@ -2467,7 +2568,7 @@ body {
   color: #000;
   letter-spacing: -0.02em;
   line-height: 1;
-  font-weight: 800;
+  font-weight: 700;
   margin-bottom: 1.4rem;
 }
 
@@ -2477,7 +2578,7 @@ body {
   font-size: clamp(1rem, 0.927rem + 0.36vw, 1.2rem);
   font-weight: 400;
   text-align: center;
-  color: #8a8989;
+  color: #000;
   letter-spacing: -0.02em;
   line-height: 1.5;
   font-family: "sprintleap-regular", Arial, Helvetica, sans-serif;
@@ -2519,7 +2620,7 @@ body {
   font-size: clamp(1rem, 0.927rem + 0.36vw, 1.2rem);
   text-align: left;
   font-family: "sprintleap-bold", Arial, Helvetica, sans-serif;
-  color: #8a8989;
+  color: #000;
   letter-spacing: -0.02em;
   line-height: 1.5;
   font-weight: 800;
@@ -2530,7 +2631,7 @@ body {
   font-size: clamp(1rem, 0.927rem + 0.36vw, 1.2rem);
   text-align: left;
   font-family: "sprintleap-regular", Arial, Helvetica, sans-serif;
-  color: #8a8989;
+  color: #000;
   letter-spacing: -0.02em;
   line-height: 1.5;
   font-weight: 400;
@@ -2622,7 +2723,7 @@ body {
   font-size: 20px;
   text-align: center;
   font-family: "sprintleap-bold", Arial, Helvetica, sans-serif;
-  color: #8a8989;
+  color: #000;
   letter-spacing: -0.02em;
   line-height: 1;
   font-weight: 400;
@@ -2748,10 +2849,10 @@ body {
 .hero-content-button {
   background: linear-gradient(90deg, rgba(72, 0, 255, 0.8156862745) 0%, rgba(15, 15, 133, 0.7450980392) 50%, #703dd6 100%);
   color: #fff;
-  padding: 1rem 2rem;
-  border-radius: 0;
+  padding: 0.75rem 1rem;
+  border-radius: 5px;
   border: 1px solid transparent;
-  font-size: 1.2rem;
+  font-size: 0.8759rem;
   font-weight: 700;
   cursor: pointer;
   font-family: "sprintleap-bold", Arial, Helvetica, sans-serif;
@@ -2769,8 +2870,7 @@ body {
 }
 .hero-content-button:hover {
   background-color: rgba(15, 15, 133, 0.9176470588);
-  color: #ffffff;
-  border: 1px solid #0f0f85;
+  box-shadow: inset 0 0 0 1px rgba(103, 103, 218, 0.9176470588);
 }
 
 .hero-content-image {
@@ -2814,7 +2914,7 @@ body {
   text-align: center;
   letter-spacing: -0.02em;
   color: #000;
-  font-weight: 800;
+  font-weight: 700;
   line-height: 1;
   margin-bottom: 2.5rem;
 }
@@ -2990,10 +3090,10 @@ body {
 .register-btn {
   background: linear-gradient(90deg, rgba(72, 0, 255, 0.8156862745) 0%, rgba(15, 15, 133, 0.7450980392) 50%, #703dd6 100%);
   color: #fff;
-  padding: 1rem 2rem;
-  border-radius: 0;
+  padding: 0.75rem 1rem;
+  border-radius: 5px;
   border: 1px solid transparent;
-  font-size: 1.2rem;
+  font-size: 0.8759rem;
   font-weight: 700;
   cursor: pointer;
   font-family: "sprintleap-bold", Arial, Helvetica, sans-serif;
@@ -3004,8 +3104,7 @@ body {
 }
 .register-btn:hover {
   background-color: rgba(15, 15, 133, 0.9176470588);
-  color: #ffffff;
-  border: 1px solid #0f0f85;
+  box-shadow: inset 0 0 0 1px rgba(103, 103, 218, 0.9176470588);
 }
 
 /*# sourceMappingURL=style.css.map */
