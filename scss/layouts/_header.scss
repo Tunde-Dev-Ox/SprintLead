@@ -169,6 +169,7 @@ min-height: 4.5rem;
   display: inline-block;
   margin: 0 auto;
   margin-top: 1.3rem;
+  text-align: center;
 };
 
 .mobile-menu-active {
@@ -198,3 +199,23 @@ min-height: 4.5rem;
   display: none;
 }
 
+
+//hamburger line animation
+body.mobile-menu-body .hamburger-menu-line:first-child {
+  transform: translateY(5px);
+  transition-delay: 0.1s;
+}
+
+body.mobile-menu-body .hamburger-menu-line:nth-child(2) {
+  width: 0;
+}
+
+body.mobile-menu-body .hamburger-menu-line:nth-child(3) {
+  transform: translateY(-13px) rotate(90deg);
+  transition-delay: 0.1s;
+}
+
+body.mobile-menu-body .hamburger-menu {
+  transform: rotate(45deg);
+    transition: all 0.1s ease-in-out;
+};

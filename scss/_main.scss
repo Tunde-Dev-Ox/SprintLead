@@ -1584,7 +1584,7 @@
 .bootcamp-content-text {
   text-align: left;
   display: flex;
-  max-width: 500px;
+  max-width: 560px;
   width: 100%;
     flex-direction: column;
     justify-content: center;
@@ -2051,5 +2051,121 @@
   letter-spacing: -0.02em;
   line-height: 1;
   font-weight: 400;
+  margin-bottom: 1.4rem;
+}
+
+
+
+
+
+
+
+//Responsibilty section
+.mentors-responsibility {
+  padding-top: 3rem;
+};
+
+.mentors-responsibility-container {
+  width: 100%;
+};
+
+.mentors-responsibility-wrapper {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  @include containerPadding {
+    padding: 0 1.25rem;
+  };
+}
+
+.mentors-responsilbilty-title {
+  font-size: clamp(1.9rem, 1.718rem + 0.91vw, 2.4rem);
+  text-align: center;
+  font-family: 'sprintleap-bold', Arial, Helvetica, sans-serif;
+  color: #000;
+  letter-spacing: -0.02em;
+  line-height: 1;
+  font-weight: 700;
+  margin-bottom: 1.4rem;
+}
+
+
+
+//Privacy policy
+.policy {
+  padding: 3rem 0;
+
+  p, ul {
+    font-size: clamp(.8954rem, 0.927rem + 0.36vw, 1rem);
+    font-weight: 400;
+    text-align: left;
+    color: #000;
+    letter-spacing: -0.02em;
+    line-height: 1.5;
+    font-family: 'sprintleap-regular', Arial, Helvetica, sans-serif;
+    margin-bottom: 1rem;
+  }
+
+  h2 {
+    font-size: clamp(1.4rem, 1.718rem + 0.91vw, 1.6rem);
+    text-align: left;
+    font-family: 'sprintleap-bold', Arial, Helvetica, sans-serif;
+    color: #000;
+    letter-spacing: -0.02em;
+    line-height: 1;
+    font-weight: 700;
+    margin-bottom: 1.4rem;
+  }
+
+  h3 {
+    font-size: clamp(1.2rem, 1.718rem + 0.91vw, 1.4rem);
+    text-align: left;
+    font-family: 'sprintleap-bold', Arial, Helvetica, sans-serif;
+    color: #000;
+    letter-spacing: -0.02em;
+    line-height: 1;
+    font-weight: 700;
+    margin-bottom: 1.4rem;
+  }
+
+  h4 {
+    font-size: clamp(1.1rem, 1.718rem + 0.91vw, 1.3rem);
+    text-align: left;
+    font-family: 'sprintleap-bold', Arial, Helvetica, sans-serif;
+    color: #000;
+    letter-spacing: -0.02em;
+    line-height: 1;
+    font-weight: 700;
+    margin-bottom: 1.4rem;
+  }
+}
+
+.policy-container {
+  width: 100%;
+}
+
+.policy-wrapper {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  @include containerPadding {
+    padding: 0 1.25rem;
+  };
+}
+
+.policy-title {
+  margin: 0 auto;
+  max-width: 500px;
+  text-align: center;
+  font-size: clamp(1.9rem, 1.718rem + 0.91vw, 2.4rem);
+  font-family: 'sprintleap-bold', Arial, Helvetica, sans-serif;
+  color: #000;
+  letter-spacing: -0.02em;
+  line-height: 1;
+  font-weight: 700;
   margin-bottom: 1.4rem;
 }
