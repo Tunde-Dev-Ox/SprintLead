@@ -2856,6 +2856,163 @@ body {
   margin-bottom: 1.4rem;
 }
 
+.mentors-hero {
+  padding-top: 3rem;
+}
+
+.mentors-hero-container {
+  width: 100%;
+}
+
+.mentors-hero-wrapper {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+@media (max-width: 1200px) {
+  .mentors-hero-wrapper {
+    padding: 0 1.25rem;
+  }
+}
+
+.mentors-hero-title {
+  font-size: clamp(1.9rem, 1.718rem + 0.91vw, 2.4rem);
+  text-align: left;
+  font-family: "sprintleap-bold", Arial, Helvetica, sans-serif;
+  color: #000;
+  letter-spacing: -0.02em;
+  line-height: 1;
+  font-weight: 700;
+  margin-bottom: 1.4rem;
+}
+
+.mentors-hero-text {
+  width: 100%;
+  font-size: clamp(1rem, 0.927rem + 0.36vw, 1.2rem);
+  text-align: left;
+  font-family: "sprintleap-regular", Arial, Helvetica, sans-serif;
+  color: #000;
+  letter-spacing: -0.02em;
+  line-height: 1.5;
+  font-weight: 400;
+  margin-bottom: 1.4rem;
+}
+
+.mentors-grid {
+  padding-top: 3rem;
+}
+
+.mentors-grid-container {
+  width: 100%;
+}
+
+.mentors-grid-wrapper {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}
+@media (max-width: 1200px) {
+  .mentors-grid-wrapper {
+    padding: 0 4vw;
+  }
+}
+
+.mentors-grid-inner-wrapper {
+  width: 100%;
+}
+
+.mentors-grid-cards {
+  grid-column-gap: 16px;
+  grid-row-gap: 16px;
+  grid-template-rows: auto auto;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-auto-columns: 1fr;
+  display: grid;
+}
+@media (max-width: 768px) {
+  .mentors-grid-cards {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (max-width: 480px) {
+  .mentors-grid-cards {
+    grid-template-columns: 1fr;
+  }
+}
+
+.mentors-grid-card {
+  margin-bottom: 20px;
+  transition: all 0.35s;
+  position: relative;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  overflow: hidden;
+  cursor: pointer;
+  max-height: 300px;
+}
+.mentors-grid-card:hover {
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+}
+
+.mentors-grid-card-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+  transition: all 0.35s;
+}
+.mentors-grid-card-image:hover {
+  transform: scale(1.1);
+}
+.mentors-grid-card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+
+.mentors-grid-card-content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 1rem;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0) 100%);
+  color: #fff;
+  transition: all 0.35s;
+}
+.mentors-grid-card-content:hover {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0) 100%);
+}
+
+.mentors-grid-card-content-title {
+  font-size: clamp(1rem, 1.718rem + 0.91vw, 1.2rem);
+  text-align: left;
+  font-family: "sprintleap-bold", Arial, Helvetica, sans-serif;
+  color: #fff;
+  letter-spacing: -0.02em;
+  line-height: 1;
+  font-weight: 700;
+  margin-bottom: 0.6rem;
+}
+
+.mentors-grid-card-content-text {
+  font-size: clamp(0.8795rem, 1.718rem + 0.91vw, 1rem);
+  text-align: left;
+  font-family: "sprintleap-regular", Arial, Helvetica, sans-serif;
+  color: #fff;
+  letter-spacing: -0.02em;
+  line-height: 1.5;
+  font-weight: 400;
+  margin-bottom: 1.4rem;
+}
+
 .hero-component {
   padding-top: clamp(3.3rem, 2.573rem + 3.64vw, 5.7rem);
   background-color: #fff;
